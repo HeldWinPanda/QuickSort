@@ -42,9 +42,10 @@ void quickSort(int arr[], int comeco, int final) {
 int main() {
     int *arr;
     arr = (int*)malloc(TAMANHO * sizeof(int));
-    srand(time(NULL));
+    
     for (int i = 0; i < TAMANHO; i++)
         arr[i] = rand();
+    srand(time(NULL));
     quickSort(arr, 0, TAMANHO - 1);
     return 0;
 }
